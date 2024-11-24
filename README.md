@@ -1,8 +1,4 @@
-# React + Vite
+# devjay
+Jay's public playground. Here to show off skills, have fun with code across the full stack, and try new things. At it's most public level, it's a carefuly architected solution for a personal dev page.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React + Vite! An amalgamation of speed, declaritive code, and fun.
