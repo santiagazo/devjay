@@ -1,4 +1,4 @@
-# Personal Website
+# DevJay
 
 Welcome to my personal website! This project is designed to showcase my skills in front-end development, user interface design, and infrastructure automation. It is built with **React** and **Vite** for a fast and modern development experience, and is structured to impress potential employers with both its code quality and deployability.
 
@@ -22,7 +22,6 @@ The primary goal of this website is to:
   - [React](https://reactjs.org/): A popular library for building user interfaces.
   - [Vite](https://vitejs.dev/): A fast build tool optimized for modern web projects.
   - [Tailwind](https://tailwindcss.com/): A utility-first CSS framework composed to build any design, directly in your markup.
-  - [CSS Modules](https://github.com/css-modules/css-modules): For scoped and maintainable styles.
 
 - **Infrastructure**:
   - [AWS Amplify](https://aws.amazon.com/amplify/): For managed hosting and CI/CD.
