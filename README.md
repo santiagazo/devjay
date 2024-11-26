@@ -26,7 +26,7 @@ The primary goal of this website is to:
 - **Infrastructure**:
   - [AWS Amplify](https://aws.amazon.com/amplify/): For managed hosting and CI/CD.
   - [GitHub Actions](https://github.com/features/actions): For continuous integration and deployment.
-  - Infrastructure as Code with [Terraform](https://www.terraform.io/) or [AWS CLI](https://aws.amazon.com/cli/).
+  - Infrastructure as Code with [AWS CLI](https://aws.amazon.com/cli/).
 
 ---
 

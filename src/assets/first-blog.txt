@@ -1,0 +1,160 @@
+# Building My Personal Website: A Journey from Architecture to Deployment
+
+Creating a personal website can be a simple task or a robust learning experience. For me, it became an opportunity to explore architectural principles, streamline development processes, and leverage modern CI/CD practices. Here's a look at how I built **devjay.me**, designed to showcase my skills to potential employers and business associates.
+
+---
+
+## **Step 1: Designing the Architecture**
+
+The journey began with establishing a strong architectural foundation. My goal was to build a site that impressed not only in its functionality and design but also in its scalability and maintainability. I followed my **six-step architectural process**:
+
+### **1. Identify the Actors**
+I listed all possible actors the app might serve:
+- Employers
+- Equity partners
+- Contract opportunities
+- Consulting opportunities
+- Non-profit companies
+
+### **2. Focus on Key Actors**
+Among the actors, I designed the app primarily for **Business Associates**, as they are the key stakeholders driving revenue.
+
+### **3. Define Primary Entities**
+Two primary entities emerged:
+1. **User (me):** The individual being showcased.
+    - **Attributes:** Name, Address, Phone, PreferredContactMethod, Resume, Projects, etc.
+    - **Operations:** DisplayContactDetails(), DisplayBlogs(), ManageBlogs(), Reviews().
+
+2. **Guest (Business Associate):** The visitor interacting with the content.
+    - **Attributes:** Unique ID, session details, conversion score, name, company, messages, etc.
+    - **Operations:** DisplayGuestConversion(), SendGuestsEmailsToJay().
+
+### **4. Define Use Cases**
+The primary use cases were straightforward:
+1. **Get to Know Jay:** Showcase my skills, portfolio, and blog posts.
+2. **Contact Jay:** Enable users to get in touch easily.
+
+### **5. Structural Architecture**
+I built a **UML Layers Diagram**, separating:
+- **UI Layer:** Handles all user-facing components.
+- **Business Logic Layer (BL):** Processes core app logic.
+- **Data Access Layer (DAL):** Interfaces with API calls and mock data.
+
+### **6. Behavioral Architecture**
+I developed **UML Sequence Diagrams** to map out user interactions, from navigating the homepage to sending a contact email. This clarity ensured a smooth development phase.
+
+---
+
+## **Step 2: Building the MVP**
+
+With the architecture in place, I started building the Minimum Viable Product (MVP). The goal was to create a simple React app that aligned with the primary use cases.
+
+### **Screenshots of the MVP**
+1. **Home Page**:
+   ![Home Page](devjay.me/assets/pictures/home-page.png)
+2. **Contact Page**:
+   ![Contact Page](devjay.me/assets/pictures/contact-page.png)
+
+These two pages represent the most basic iteration of the primary use cases.
+
+### **Tech Stack**
+- **Frontend**: React and Vite for a modern and fast development experience.
+- **Styling**: Minimalist CSS for clean design.
+- **State Management**: Local state within components (no Redux or Context API for simplicity).
+
+---
+
+## **Step 3: Focusing on CI/CD with AWS Amplify**
+
+Before diving deep into implementation, I prioritized setting up a robust CI/CD pipeline using AWS Amplify Gen 2 Hosting.
+
+### **Why Amplify Gen 2?**
+Amplify Gen 2 offers modern, serverless hosting tailored for frontend apps, with features like:
+- **Automatic CI/CD**: Deploys changes from GitHub automatically.
+- **Custom Domains**: Seamless integration with Route 53 for `devjay.me`.
+- **SSL Certificates**: Automatically provisioned for HTTPS.
+
+### **High-Level Setup**
+1. **Connect GitHub Repository**:
+   - Linked my GitHub repo to Amplify, enabling automatic deployments on every push to the main branch.
+
+2. **Define Build Settings**:
+   - Used a custom `amplify.yml` for Vite:
+     ```yaml
+     version: 1
+     applications:
+       - frontend:
+           phases:
+             preBuild:
+               commands:
+                 - npm ci
+             build:
+               commands:
+                 - npm run build
+           artifacts:
+             baseDirectory: dist
+             files:
+               - '**/*'
+           cache:
+             paths:
+               - node_modules/**/*
+     ```
+
+3. **Custom Domain Setup**:
+   - Registered `devjay.me` in Route 53.
+   - Configured Amplify to manage DNS and provision SSL automatically.
+
+### **Deploying the MVP**
+Pushing changes to the GitHub repository triggers Amplify to:
+1. Clone the repository.
+2. Install dependencies.
+3. Run tests and build the app.
+4. Deploy the build to the Amplify-hosted domain.
+
+---
+
+## **Step 4: Implementing TDD**
+
+After deploying the MVP, I shifted focus to writing complete unit tests using **Jest** and **React Testing Library**.
+
+### **Workflow**
+1. **Write Unit Tests**:
+   - Example: Ensuring the navigation between pages works correctly.
+     ```javascript
+     test('Navigates from Home to Contact Page', () => {
+       render(<App />);
+       fireEvent.click(screen.getByText(/Go to Contact Page/i));
+       expect(screen.getByText(/Contact Page/i)).toBeInTheDocument();
+     });
+     ```
+
+2. **Run Tests Locally**:
+   ```bash
+   npm run test
+   ```
+
+3. **Integrate Tests in CI/CD**:
+   - Added `npm run test` to the Amplify pipeline's `preBuild` phase to ensure code quality before deployment.
+
+4. **Implement Code to Satisfy Tests**:
+   - Fixed navigation issues and ensured consistent styling across pages.
+
+---
+
+## **Step 5: Final Deployment**
+
+With the unit tests passing and the CI/CD pipeline in place, I completed the full deployment process:
+- **Frontend Code**: Hosted on AWS Amplify.
+- **Custom Domain**: Configured via Route 53.
+- **Unit Tests**: Integrated into the pipeline for every commit.
+
+The website was now live at **[devjay.me](https://devjay.me)**, showcasing my journey from architecture to deployment.
+
+---
+
+## **Conclusion**
+
+Building this website taught me the importance of starting with a strong architectural foundation, focusing on user needs, and implementing modern development practices like CI/CD and TDD. The process was not just about creating a website but demonstrating how I approach problem-solving and deliver results efficiently.
+
+I hope this project resonates with employers and business associates as a testament to my technical and organizational skills. If you'd like to know more, feel free to reach out via **[Contact Jay](https://devjay.me/contact)**!
+
