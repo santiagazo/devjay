@@ -1,6 +1,6 @@
 # DevJay
 
-Welcome to my personal website! This project is designed to showcase my skills in front-end development, user interface design, and infrastructure automation. It is built with **React** and **Vite** for a fast and modern development experience, and is structured to impress potential employers with both its code quality and deployability.
+Welcome to my personal website! This project is designed to showcase my skills in front-end / backend development, architecture, and infrastructure automation. It is built with **React** and **Vite** for a fast and modern development experience, and is structured to impress potential employers with both its code quality and deployability.
 
 ---
 

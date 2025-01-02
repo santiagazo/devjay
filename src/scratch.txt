@@ -1,0 +1,195 @@
+c. Technologies Enabling Solar-Powered DC Microgrids
+Microgrids could play an important role in the deployment of distributed energy
+resources, like distributed photovoltaic systems, and in improving grid reliability and
+resiliency. Microgrids typically consist of loads and distributed generation assets that are
+connected via a small-scale grid and are controlled as a single entity with respect to the
+rest of the electricity grid. Alternating-current (ac) microgrids are the typical
+configuration, However, the concept of direct-current (dc) microgrids has been gaining
+interest as there are certain applications that are better aligned with and could benefit
+from dc microgrids. These could also involve dc distribution systems and nanogrid
+within buildings, which could directly connect dc energy sources (e.g. on-site PV
+generation and dc-coupled energy storage) and serve dc loads (e.g. LED lighting,
+computers and electronics, electric vehicle charging, HVAC and water heating systems
+with variable frequency drives) directly from a dc bus. Broader adoption and
+deployment of such dc microgrids will critically depend on a compelling value
+proposition, technical advancement in modeling, operation, and control technologies,
+commercial availability, and standardization of dc equipment and appliances, as well as
+development of appropriate reliability and safety standards.
+This subtopic seeks applications to advance the components, design, and commercial
+maturity of dc microgrids incorporating solar energy resources, dc loads, and potentially
+dc-coupled energy storage.
+Specific areas of interest include, but are not limited to:
+
+- Innovative designs and architectures of dc microgrid and building nanogrids.
+
+- Tools for planning, design, and quantification of benefits of dc microgrids.
+
+- Power electronic for dc bus architectures including solar PV.
+
+- Local controllers and energy management systems for the operation of dc microgrids.
+
+- Local and wide-area control systems for the operation of multiple interconnected dc
+microgrids with multiple distributed energy resources.
+
+- Modeling and simulation of dc systems and microgrids, including operation, control,
+and stability analysis.
+
+- Systems for fault detection, protection, and dc circuit breaker hardware.
+Areas not of interest for this subtopic:
+
+- Development of dc appliances.
+
+- Converters and power electronics not designed and intended for dc microgrid
+operation.
+
+- Technologies and products for ac microgrids.
+
+
+Questions – contact solar.sbir@ee.doe.gov
+
+
+d. Cybersecurity of Solar Energy Systems (DOE Crosscuts: Grid Modernization, Energy
+Sector Cybersecurity)
+Ensuring reliable and safe operation of electrical grids is critical for the U.S. economy
+and national security. Cybersecurity of the electricity grid is regarded as the protection
+of interconnected electric power systems from digital attacks. As the amount of solar
+energy on the grid grows, solar has become as an integral part of the system,
+contributing to large-scale generation, as well as small-scale distributed energy resource
+(DER) generation in the form of rooftop installations, storage systems, and microgrids,
+which typically are spread out over a wide area. Unlike large-scale generation systems
+that must be compliant to critical infrastructure protection standards before they can be
+operational, smaller PV systems and other DERs currently do not have any cybersecurity
+standards to follow, and they are usually connected by their owners to necessary
+networks for monitoring and control purposes. The electric grid is a cyber-physical
+system, thus cyberattacks on the grid can cause physical damage and safety issues in
+addition to disrupting information flow. Growing deployment of DER networks in
+electric grid led to a rise in the attack surface against these systems, and result in higher
+vulnerabilities in the grid that hackers can exploit, making DER cybersecurity a key
+challenge for grid operators and solar system owners.
+Improving cybersecurity in renewable energy is part of DOE Energy Efficiency and
+Renewable Energy (EERE) Office’s Multi-Year Program Plan [1], and also supports SETO’s
+goals of reliably and securely integrating solar electricity into the grid [2]. In 2022, the
+Office of EERE along with the Office of Cybersecurity, Energy Security, and Emergency
+Response (CESER), developed the Cybersecurity Considerations for DER on the U.S.
+Electric Grid report [3], which provides recommendations for the DER industries, energy
+sector, and government to secure current and future systems. Over the past decade,
+SETO has funded various research and development programs [4-8] that aim to
+understand the evolving characteristics of cyberattacks, advance cybersecurity
+technologies to protect electric grids from cyberattacks, and develop cybersecurity
+standards and certifications.
+This subtopic seeks to advance technologies and products to enable more cyber-aware
+and cyber-secure electric power systems with high penetration of solar (particularly in
+the form of distributed deployment) and to improve the ability of electric grids and solar
+assets, like solar/hybrid power plants and their components (e.g., electronic devices
+associated with solar energy systems, such as inverters, dc-dc optimizers or other
+converters, smart meters, and grid-edge devices) to protect themselves from and
+quickly recover in response to cyber threats.
+Specific areas of interest include, but not limited to:
+
+- Innovative cyberattack detection and identification schemes that can be applied
+across various solar assets, from distributed customer devices to utility-scale
+systems.
+
+- Tools that perform risk assessments that recognize the increasing
+interdependencies between physical and cyber (information and communication)
+systems and evaluate how cyberattacks can affect electric power grid operations.
+
+- Automated risk-mitigation strategies that allow rapid response and service
+restoration of electric grid and solar assets after cyber-attacks and demonstrate the
+system ability to endure multiple simultaneous attacks.
+
+- Device-level cybersecurity and protection systems that enable self-awareness into
+the grid-interactive solar assets.
+
+- Controls and operations of solar assets that are designed and can be deployed
+adhering with zero trust principles where data and commands from remote devices
+are validated using cryptographically secure mechanisms (e.g., the capability to
+reject a setpoint/commands and take corrective actions if the estimated risk factor
+is high enough to cause instability and abnormal operations).
+
+- System-level cyber threat detection, identification and mitigation approaches via
+cooperative strategies among large amounts of geographically dispersed solar
+assets, other DERs, and sensors based on either centralized or distributed
+communication networks.
+
+
+Questions – contact solar.sbir@ee.doe.gov
+
+
+
+e. Distribution Reliability Visibility (DOE Crosscuts: Grid Modernization)
+The increased adoption of distributed solar and other energy resources (DERs) can
+impact the performance of distribution system if not properly managed and challenge
+the reliable operation of distribution grids. The impacts (e.g., overvoltage and thermal
+violations, miscoordination and misoperation of protection devices, faster dynamics,
+uncertain, and potential adverse control interactions of inverter-based resources, etc.)
+are exacerbated by a lack of operator situational awareness of distribution grids,
+particularly the assets and systems at the grid-edge and even behind-the-meter. SETO
+tries to address solar energy system integration challenges [1] and has funded multiple
+research, development and deployment programs to understand the behavior of grids
+with high contributions from DER and inverter-based resources through various funding
+opportunities [2-7]. These programs have aimed to understand the fundamental needs
+of sensors and measurements and advance technologies that enhance the visibility and
+controllability of distribution grids with high penetration of solar and other DERs.
+This subtopic seeks to advance technologies and products to enhance the visibility of
+distribution grids and provide actionable information for grid operators to safely and
+reliably operate the distribution system.
+Specific areas of interest include, but not limited to:
+
+- Advanced voltage monitoring and analysis systems that can
+o estimate the spatial and temporal voltage profiles of distribution feeders
+in real-time by considering the intermittency and uncertainty of solar
+energy resources;
+o detect the ‘hotspot’ node voltages exceeding safe operational limits;
+o facilitate voltage stability margin and hosting capacity estimation and
+analysis; and
+o enable optimal voltage control via inverter-based DERs and other gridedge devices.
+The proposed solutions must also be computationally efficient to be suitable for realtime applications.
+
+- Advanced distribution state estimation techniques that can address the
+complications inherent with distribution grids (e.g., time-varying unbalance,
+limited availability of real-time measurements, asynchronous and/or
+heterogenous measurements from different sensing/metering infrastructures,
+incorrectly captured and/or time-varying network connectivity and topology,
+etc.). The proposed solutions must also be computationally efficient to be
+suitable for real-time applications.
+
+- Innovative technologies that can estimate and predict dynamic operating
+envelopes and reserve margins (generally defined as time-varying upper and
+lower bounds on the import or export of power in a given time interval) of DERs
+at various aggregation levels of connection points (e.g., service entry point,
+feeder, substation level, or subdivision of a distribution system). The developed
+solutions are expected to support distribution operation in real-/near-real-time,
+increase the utilization of DERs and assist DERs to participate in energy and
+network services markets.
+
+- Innovative technologies that support dynamic hosting capacity estimate for
+utilities to better strategize for distribution system upgrades. The developed
+solutions are expected to incorporate, besides siting considerations of DERs,
+autonomous inverter functions (e.g. volt-var control), and/or optimal
+coordinated control of DER at various aggregate levels.
+
+- Innovative technologies that identify emerging risks and unstable system
+dynamics in real time and predict future behaviors. The developed solutions are
+expected to ingest large amounts of data captured by dispersed sensors and
+monitoring devices with various resolutions and sources, such as wide-area
+phasor measurement units, substation intelligent electronic devices, devices
+capable of streaming point-on-wave data, power quality meters, and digital fault
+recorders and relays, and energy management systems. The solutions are also
+expected to provide automatic event analysis, reporting, and recommendations
+for reliability risk mitigation.
+
+- Grid-Edge intelligent analytics and devices that can improve distribution
+system’s situational awareness, assist DER aggregation and support automated
+control and operation of distribution grids. The developed solutions are
+expected to host advanced real-time analytics and optimization (example
+applications listed above), and support flexible and open communication and
+control architectures (e.g., the cloud/utility premises;
+centralized/decentralized/distributed) for interoperable integration to a utility
+distributed energy resource management systems (DERMS) or advanced
+distribution management systems (ADMS), a third party aggregator DERMS, and
+behind-the-meter (BTM) assets and resources.
+Areas not of interest:
+
+- Solutions that primarily focus on health monitoring and diagnostic of individual
+grid components and assets
