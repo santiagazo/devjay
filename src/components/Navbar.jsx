@@ -6,7 +6,7 @@ import Button from "./Button";
 import NavLinkButton from "./NavLinkButton.jsx";
 
 const Navbar = () => {
-  const { darkMode, toggleDarkMode } = useDarkMode(true);
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const [isEnabledMobileMenu, setIsEnabledMobileMenu] = useState(false);
 
   const navButtons = [
@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="max-w-full mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-6 h-16">
           <div className="col-span-1 flex items-center">
-            <JayLaraIconDark className="w-10 m-auto rounded-full shadow-emerald-300 shadow-md" />
+            <JayLaraIconDark className="w-10 m-auto rounded-full shadow-sky-300 shadow-md" />
           </div>
           <div className="col-span-4 hidden md:block">
             <div className="h-16 ml-10 flex items-center space-x-4">

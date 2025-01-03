@@ -45,7 +45,7 @@ const MobileMenu = () => {
       ),
       route: "/contact",
       title: "Contact",
-      description: "Contact Jayy",
+      description: "Contact Jay",
     },
     {
       icon: (
