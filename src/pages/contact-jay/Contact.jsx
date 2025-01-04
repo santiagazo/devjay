@@ -43,7 +43,7 @@ const Contact = () => {
                   Text
                 </p>
                 <p className="text-base leading-7 text-dark-grey-600">
-                  Text Jay
+                  Text Me
                 </p>
                 <a
                   className="text-lg font-bold text-sky-500"
