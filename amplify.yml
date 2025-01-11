@@ -16,9 +16,3 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-
-      redirects:
-        - source: "</^(?!\/index.html).*$/i>"
-          target: "/index.html"
-          status: 200
-          condition: null
