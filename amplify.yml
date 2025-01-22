@@ -5,7 +5,6 @@ applications:
         preBuild:
           commands:
             - npm ci
-        #   - npm run test
         build:
           commands:
             - npm run build
@@ -16,3 +15,18 @@ applications:
       cache:
         paths:
           - node_modules/**/*
+
+      customHeaders:
+        - pattern: "**/*.js"
+          headers:
+            - key: "Content-Type"
+              value: "application/javascript"
+        - pattern: "**/*.css"
+          headers:
+            - key: "Content-Type"
+              value: "text/css"
+
+      rewrites:
+        - source: "</^[^.]+$|(?<!\.(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp|html))$/>"
+          target: "/index.html"
+          status: 200
