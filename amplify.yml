@@ -26,7 +26,3 @@ applications:
             - key: "Content-Type"
               value: "text/css"
 
-      rewrites:
-        - source: "</^[^.]+$|(?<!\\.(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp))$/>"
-          target: "/index.html"
-          status: 200
